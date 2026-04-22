@@ -76,7 +76,7 @@ This repository was built to:
 1. Clone this repository:
 
 ```bash
-git clone https://github.com/your-username/javascript-mini-projects.git
+git clone https://github.com/RicardoMartins07/JavaScript-Beginner-to-Hero.git
 ```
 
 2. Open the project folder
