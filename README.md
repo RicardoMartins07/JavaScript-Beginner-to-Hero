@@ -100,7 +100,14 @@ git clone https://github.com/RicardoMartins07/JavaScript-Beginner-to-Hero.git
 * Expand projects with more features
 
 ---
+## 🔗 Live Demo
 
+- Main Page → [Open](https://ricardomartins07.github.io/JavaScript-Beginner-to-Hero/)
+- Guess My Number → [Play](https://ricardomartins07.github.io/JavaScript-Beginner-to-Hero/guess-my-number/)
+- Modal Window → [View](https://ricardomartins07.github.io/JavaScript-Beginner-to-Hero/Modal-Window/)
+- Pig Game → [Play](https://ricardomartins07.github.io/JavaScript-Beginner-to-Hero/Pig-Game/)
+- 
+---
 ## 👤 Author
 
 Made by **Ricardo Martins**
