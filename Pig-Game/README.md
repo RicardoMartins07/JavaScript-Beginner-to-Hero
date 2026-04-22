@@ -90,20 +90,6 @@ While building this project, I practiced:
 
 ---
 
-## ▶️ How to Run
-
-1. Clone this repository:
-
-```bash
-git clone https://github.com/RicardoMartins07/JavaScript-Beginner-to-Hero/tree/main/Pig-Game
-```
-
-2. Open the project folder
-
-3. Run the `index.html` file in your browser
-
----
-
 ## 👤 Author
 
 Made by **Ricardo Martins**
