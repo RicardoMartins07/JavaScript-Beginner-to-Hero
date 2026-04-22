@@ -95,7 +95,7 @@ While building this project, I practiced:
 1. Clone this repository:
 
 ```bash
-git clone
+git clone https://github.com/RicardoMartins07/JavaScript-Beginner-to-Hero/tree/main/Pig-Game
 ```
 
 2. Open the project folder
