@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background: radial-gradient(circle at top, #1f2937, #0f172a 55%);
+  color: #f8fafc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.stopwatch-app {
+  width: 100%;
+  max-width: 520px;
+  background-color: rgba(15, 23, 42, 0.9);
+  border: 1px solid rgba(148, 163, 184, 0.15);
+  border-radius: 28px;
+  padding: 2rem;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.35);
+}
+
+.top-bar {
+  margin-bottom: 2rem;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.18rem;
+  font-size: 0.75rem;
+  color: #94a3b8;
+  margin-bottom: 0.4rem;
+}
+
+.top-bar h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.clock-section {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.clock-ring {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  padding: 14px;
+  background: conic-gradient(from 180deg, #22c55e, #38bdf8, #a78bfa, #22c55e);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock-face {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #020617;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 0 0 30px rgba(255, 255, 255, 0.05);
+}
+
+#display {
+  font-size: 3.6rem;
+  font-weight: 700;
+  letter-spacing: 0.18rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.controls {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.control-btn,
+.lap-btn {
+  border: none;
+  border-radius: 14px;
+  padding: 0.95rem 1rem;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition:
+    transform 0.15s ease,
+    opacity 0.15s ease;
+}
+
+.control-btn:hover,
+.lap-btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.95;
+}
+
+.start {
+  background: #22c55e;
+  color: #052e16;
+}
+
+.pause {
+  background: #f59e0b;
+  color: #451a03;
+}
+
+.reset {
+  background: #ef4444;
+  color: #450a0a;
+}
+
+.stats-panel {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.stat-box {
+  background: rgba(30, 41, 59, 0.95);
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  border-radius: 18px;
+  padding: 1rem;
+}
+
+.stat-label {
+  font-size: 0.8rem;
+  color: #94a3b8;
+  margin-bottom: 0.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08rem;
+}
+
+.stat-value {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.laps-panel {
+  background: rgba(30, 41, 59, 0.8);
+  border-radius: 20px;
+  padding: 1rem;
+  border: 1px solid rgba(148, 163, 184, 0.12);
+}
+
+.laps-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+
+.laps-header h2 {
+  font-size: 1.1rem;
+}
+
+.lap-btn {
+  background: #38bdf8;
+  color: #082f49;
+  padding-inline: 1.1rem;
+}
+
+.laps-list {
+  list-style: none;
+  max-height: 180px;
+  overflow-y: auto;
+}
+
+.laps-list li {
+  padding: 0.8rem 0.2rem;
+  border-bottom: 1px solid rgba(148, 163, 184, 0.12);
+  font-size: 0.95rem;
+}
+
+.laps-list li:last-child {
+  border-bottom: none;
+}
+
+.empty-lap {
+  text-align: center;
+  color: #94a3b8;
+}
+
+@media (max-width: 560px) {
+  .stopwatch-app {
+    padding: 1.4rem;
+  }
+
+  .clock-ring {
+    width: 210px;
+    height: 210px;
+  }
+
+  #display {
+    font-size: 2.8rem;
+  }
+
+  .controls {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-panel {
+    grid-template-columns: 1fr;
+  }
+}

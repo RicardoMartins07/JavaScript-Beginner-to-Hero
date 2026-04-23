@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="stopwatch-app">
+      <header class="top-bar">
+        <p class="eyebrow">Performance Mode</p>
+        <h1>Stopwatch</h1>
+      </header>
+
+      <section class="clock-section">
+        <div class="clock-ring">
+          <div class="clock-face">
+            <span id="display">00:00</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="controls">
+        <button id="start" class="control-btn start">Start</button>
+        <button id="pause" class="control-btn pause">Pause</button>
+        <button id="reset" class="control-btn reset">Reset</button>
+      </section>
+
+      <section class="stats-panel">
+        <div class="stat-box">
+          <p class="stat-label">Status</p>
+          <p class="stat-value" id="status">Ready</p>
+        </div>
+        <div class="stat-box">
+          <p class="stat-label">Mode</p>
+          <p class="stat-value">Count Up</p>
+        </div>
+      </section>
+
+      <section class="laps-panel">
+        <div class="laps-header">
+          <h2>Lap History</h2>
+          <button id="lap" class="lap-btn">Lap</button>
+        </div>
+
+        <ul id="laps-list" class="laps-list">
+          <li class="empty-lap">No laps recorded</li>
+        </ul>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
