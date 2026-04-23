@@ -37,14 +37,37 @@ const runTimer = function () {
   }, 1000);
 };
 
+const updateDisplay = function (time) {
+  const displayMinutes = Math.floor(time / 60);
+  const displaySeconds = time % 60;
+
+  display.textContent = `${displayMinutes < 10 ? "0" : ""}${displayMinutes}:${
+    displaySeconds < 10 ? "0" : ""
+  }${displaySeconds}`;
+};
+
+const runTimer = function () {
+  timer = setInterval(function () {
+    if (timeLeft > 0) {
+      timeLeft--;
+      updateDisplay(timeLeft);
+    } else {
+      clearInterval(timer);
+      timer = null;
+      display.textContent = "Time's up!";
+      pauseBtn.textContent = "Pause";
+    }
+  }, 1000);
+};
+
 startBtn.addEventListener("click", function () {
   if (timer) return;
 
   if (timeLeft === 0) {
-    const minutesLeft = parseInt(minutes.value) || 0;
-    const secondsLeft = parseInt(seconds.value) || 0;
+    const min = parseInt(minutes.value) || 0;
+    const sec = parseInt(seconds.value) || 0;
 
-    timeLeft = convertMinutesToSeconds(minutesLeft) + secondsLeft;
+    timeLeft = convertMinutesToSeconds(min) + sec;
   }
 
   if (timeLeft <= 0) return;
@@ -57,10 +80,10 @@ startBtn.addEventListener("click", function () {
 pauseBtn.addEventListener("click", function () {
   if (timer) {
     clearInterval(timer);
-    timer == null;
+    timer = null;
     pauseBtn.textContent = "Resume";
   } else if (timeLeft > 0) {
-    runTimer(timer);
+    runTimer();
     pauseBtn.textContent = "Pause";
   }
 });
