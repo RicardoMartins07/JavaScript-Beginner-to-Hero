@@ -106,7 +106,8 @@ git clone https://github.com/RicardoMartins07/JavaScript-Beginner-to-Hero.git
 - Guess My Number → [Play](https://ricardomartins07.github.io/JavaScript-Beginner-to-Hero/guess-my-number/)
 - Modal Window → [View](https://ricardomartins07.github.io/JavaScript-Beginner-to-Hero/Modal-Window/)
 - Pig Game → [Play](https://ricardomartins07.github.io/JavaScript-Beginner-to-Hero/Pig-Game/)
-- 
+- countdown  → [Play](https://ricardomartins07.github.io/JavaScript-Beginner-to-Hero/countdown/)
+- stopwatch  → [Play](https://ricardomartins07.github.io/JavaScript-Beginner-to-Hero/stopwatch/)
 ---
 ## 👤 Author
 
