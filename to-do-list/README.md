@@ -92,7 +92,7 @@ While building this project, I practiced:
 
 ## 🔗 Live Demo
 
-- To-Do List → [Open](https://ricardomartins07.github.io/JavaScript-Beginner-to-Hero/todo-list/)
+- To-Do List → [Open](https://ricardomartins07.github.io/JavaScript-Beginner-to-Hero/to-do-list/)
 
 ---
 
